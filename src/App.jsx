@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './components/Navbar'
 import Home from './sections/Home'
 import About from './sections/About'
@@ -9,21 +9,27 @@ import Testimonials from './sections/Testimonials'
 import Contact from './sections/Contact'
 import Footer from './sections/Footer'
 import CustomCursor from './components/CustomCursor'
+import IntroAnimation from './components/IntroAnimation'
 
 const App = () => {
+
+  const [introFlag, setIntroFlag] = useState(false)
   return (
-    <div className="relative gradient text-white">
-      <CustomCursor />
-      <Navbar />
-      <Home />
-      <About />
-      <Skills />
-      <Experience />
-      <Project />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </div>
+    <>
+      {!introFlag && <IntroAnimation onFinish={() => setIntroFlag(true)} />}
+      <div className="relative gradient text-white">
+        <CustomCursor />
+        <Navbar />
+        <Home />
+        <About />
+        <Skills />
+        <Experience />
+        <Project />
+        <Testimonials />
+        <Contact />
+        <Footer />
+      </div>
+    </>
   )
 }
 
