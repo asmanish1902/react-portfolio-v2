@@ -39,6 +39,7 @@ const Navbar = () => {
       if (forceVisible) return setIsVisible(true);
 
       const currentScrollY = window.scrollY;
+
       if (currentScrollY > lastScrollY.current) {
         setIsVisible(false);
       } else {

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { memo, useEffect, useRef } from 'react'
 
 const ParticleBackground = () => {
   const canvasRef = useRef(null);
@@ -75,18 +75,18 @@ const ParticleBackground = () => {
       cancelAnimationFrame(animationFrameId);
     }
 
-  })
+  }, [])
 
 
 
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full z-0"
+      className="absolute inset-0 w-full h-full z-0"
     >
 
     </canvas>
   )
 }
 
-export default ParticleBackground
+export default memo(ParticleBackground)

@@ -8,14 +8,12 @@ import Project from './sections/Project'
 import Testimonials from './sections/Testimonials'
 import Contact from './sections/Contact'
 import Footer from './sections/Footer'
-import ParticleBackground from './components/ParticleBackground'
 import CustomCursor from './components/CustomCursor'
 
 const App = () => {
   return (
     <div className="relative gradient text-white">
       <CustomCursor />
-      <ParticleBackground />
       <Navbar />
       <Home />
       <About />
