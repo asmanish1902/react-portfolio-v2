@@ -7,8 +7,8 @@ import avator from '../assets/avator.png'
 const Home = () => {
 
   const socials = [
-    { Icon: FaLinkedin, label: "LinkedIn", href: "https://linkedin.com/in/manish-kumar-123" },
-    { Icon: FaGithub, label: "GitHub", href: "https://github.com/in/manish-kumar-123" }
+    { Icon: FaLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/manish-kumar-1b46b0157/" },
+    { Icon: FaGithub, label: "GitHub", href: "https://github.com/asmanish1902" }
   ];
 
   const glowVariants = {
@@ -110,7 +110,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              Hello I'm <br />
+              Hello, I'm <br />
               <span className="text-white font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl lg:whitespace-nowrap">Manish Kumar</span>
             </motion.h1>
 
@@ -131,7 +131,7 @@ const Home = () => {
               <a href="#projects"
                 className='px-6 py-3 rounded-full font-medium text-lg text-white bg-gradient-to-r from-[#1cd8d2] via-[#00bf8f] to-[#302b63] shadow-lg hover:scale-105 transition-all'
               >View My Work</a>
-              <a href="/manish_kumar_resume.pdf"
+              <a href="/Resume_Manish_Kumar.pdf"
                 download
                 className='px-6 py-3 rounded-full text-lg font-medium text-black bg-white hover:bg-gray-200 shadow-lg hover:scale-105 transition-all '
               >My Resume</a>
