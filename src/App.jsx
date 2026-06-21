@@ -16,7 +16,7 @@ const App = () => {
   const [introFlag, setIntroFlag] = useState(false)
   return (
     <>
-      {!introFlag && <IntroAnimation onFinish={() => setIntroFlag(true)} />}
+      {/* {!introFlag && <IntroAnimation onFinish={() => setIntroFlag(true)} />} */}
       <div className="relative gradient text-white">
         <CustomCursor />
         <Navbar />

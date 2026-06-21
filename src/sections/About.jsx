@@ -53,7 +53,7 @@ const About = () => {
             <div className='mt-6 grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 max-w-xl'>
               {
                 stats.map((s, i) => (
-                  <motion.div className='rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-center'
+                  <motion.div key={i} className='rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-center'
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.05, duration: 0.4 }}
